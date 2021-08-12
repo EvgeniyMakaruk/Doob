@@ -85,6 +85,7 @@ body{
          width: 200px;
          background-color: $colorRed;
          color: #fff;
+         cursor: pointer;
          &:last-child {
             height: 50px;
             width: 200px;
@@ -96,9 +97,10 @@ body{
    .more__right {
       width: 50%;
       margin-top: 105px;
-      position: relative;
+      
       left: 150px;
       img {
+         position: relative;
       }
    }
 }
@@ -240,4 +242,14 @@ body{
          
       }
    }
+}
+.slick-prev:before {
+   content: '←';
+   background-color: gray;
+   
+}
+.slick-next:before {
+   content: '→';
+   background-color: gray;
+   
 }

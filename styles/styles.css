@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: -15px 0px;
 }
@@ -101,6 +102,7 @@ body {
   width: 200px;
   background-color: #ff3946;
   color: #fff;
+  cursor: pointer;
 }
 
 .more .more__left button:last-child {
@@ -113,8 +115,11 @@ body {
 .more .more__right {
   width: 50%;
   margin-top: 105px;
-  position: relative;
   left: 150px;
+}
+
+.more .more__right img {
+  position: relative;
 }
 
 .work {
@@ -293,5 +298,15 @@ body {
 
 .footer .footer__net img {
   margin-right: 70px;
+}
+
+.slick-prev:before {
+  content: '←';
+  background-color: gray;
+}
+
+.slick-next:before {
+  content: '→';
+  background-color: gray;
 }
 /*# sourceMappingURL=styles.css.map */
