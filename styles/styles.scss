@@ -54,6 +54,86 @@ body {
       }
    }
 }
+.burger {
+   display: none;
+   margin: 15px auto;
+   width: 100%;
+   background-color: #000;
+   position: relative;
+   color: #fff;
+   text-align: center;
+   height: 60px;
+   
+   label {
+      display: block;
+      position: absolute;
+      top: 15px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      z-index: 2;
+   }
+   #checkMenu {
+      display: none;
+   }
+   .burgerLine{
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      width: 35px;
+      height: 4px;
+      background-color: #fff;
+      transition: .5s all;
+   }
+   .second, .third{
+      top: 18px;
+   }
+   .fourth{
+      top: 29px;
+   }
+   .burger__menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      transform: translateY(100%);
+      max-height: 0;
+      font-size: 0;
+      overflow: hidden;
+      transition: .5s all;
+      a{
+         display: block;
+         width: 100%;
+         padding: 10px;
+         color: rgb(255, 255, 255);
+         text-decoration: none;
+         border-top: 1px solid rgb(148, 148, 148);
+         background-color: $colorBlue;
+         &:hover{
+            background-color: rgb(69, 8, 148);
+         }
+      }
+   }
+   #checkMenu:checked ~ .burger__menu{
+      max-height: 500px;
+      font-size: 18px;
+   }
+   #checkMenu:checked ~ .fitst{
+      display: none;
+   }
+   #checkMenu:checked ~ .second{
+      transform: rotate(45deg);
+   }
+   #checkMenu:checked ~ .third{
+      transform: rotate(-45deg);
+   }
+   #checkMenu:checked ~ .fourth{
+      display: none;
+   }
+}
+
 .container {
    max-width: 1200px;
    margin: 0 auto;
@@ -103,7 +183,7 @@ body {
       img {
          width: 680px;
          position: relative;
-         transform: translate(20%);
+         transform: translate(10%);
       }
    }
 }
@@ -258,6 +338,15 @@ body {
 }
 
 @media (max-width: 1199px) {
+   .more {
+
+      .more__right {
+         img{
+            transform: translate(-20%);
+         }
+         
+      }
+   }
    .header {
       .header__logo {
          img {
@@ -319,6 +408,12 @@ body {
 }
 
 @media (max-width: 800px) {
+   .burger {
+      display: block;
+      input {
+         margin-top: 30px;
+      }
+   }
    .more {
       display: flex;
       flex-direction: column;
@@ -327,18 +422,17 @@ body {
          display: none;
       }
    }
-   .header{
+   .header {
       display: none;
    }
    .container {
-      .work__title{
-         h3{
+      .work__title {
+         h3 {
             text-align: center;
          }
       }
       .work__blocks {
          margin-left: 10%;
-
 
          img {
             width: 80%;

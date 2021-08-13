@@ -4,3 +4,8 @@ $(function () {
       dots:true
    })
 })
+// $(document).ready(()=>{
+//    $('.openBurger').click(()=>{
+//       $(this).toggleClass()
+//    })
+// })
