@@ -1,3 +1,6 @@
 $(function () {
-   $('.more__right').slick()
+   $('.more__right').slick({
+      arrows:false,
+      dots:true
+   })
 })

@@ -1,6 +1,6 @@
 $colorBlue: #314584;
 $colorRed: #ff3946;
-body{
+body {
    margin: -15px 0px;
 }
 .header {
@@ -57,10 +57,13 @@ body{
 .container {
    width: 1170px;
    margin: 0 auto;
+   min-width: 1200px;
+   padding: 0 15px;
 }
 
 .more {
    display: flex;
+
    .more__left {
       width: 50%;
       h3 {
@@ -97,10 +100,11 @@ body{
    .more__right {
       width: 50%;
       margin-top: 105px;
-      
-      left: 150px;
+
       img {
+         width: 680px;
          position: relative;
+         transform: translate(20%);
       }
    }
 }
@@ -215,15 +219,15 @@ body{
       font-size: 48px;
       color: $colorRed;
       font-weight: bold;
-      p{
+      p {
          margin: 0;
       }
    }
    .footer__nav {
       display: inline-block;
-      ul{
+      ul {
          margin-top: 45px;
-         li{
+         li {
             display: inline;
             margin-right: 45px;
             color: #fff;
@@ -237,19 +241,16 @@ body{
       margin-top: 50px;
    }
    .footer__net {
-      img{
+      img {
          margin-right: 70px;
-         
       }
    }
 }
 .slick-prev:before {
-   content: '←';
+   content: "←";
    background-color: gray;
-   
 }
 .slick-next:before {
-   content: '→';
+   content: "→";
    background-color: gray;
-   
 }

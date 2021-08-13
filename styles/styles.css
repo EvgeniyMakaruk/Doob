@@ -66,6 +66,8 @@ body {
 .container {
   width: 1170px;
   margin: 0 auto;
+  min-width: 1200px;
+  padding: 0 15px;
 }
 
 .more {
@@ -115,11 +117,13 @@ body {
 .more .more__right {
   width: 50%;
   margin-top: 105px;
-  left: 150px;
 }
 
 .more .more__right img {
+  width: 680px;
   position: relative;
+  -webkit-transform: translate(20%);
+          transform: translate(20%);
 }
 
 .work {
@@ -301,12 +305,12 @@ body {
 }
 
 .slick-prev:before {
-  content: '←';
+  content: "←";
   background-color: gray;
 }
 
 .slick-next:before {
-  content: '→';
+  content: "→";
   background-color: gray;
 }
 /*# sourceMappingURL=styles.css.map */
